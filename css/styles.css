@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Proxima;
   src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
 }
+a {
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   height: 90px;
@@ -117,6 +121,84 @@ nav .links a {
   font-size: 60px;
   font-family: GillSans;
   color: white;
+}
+
+.tours-wrapper {
+  width: 818px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tours-wrapper .tour {
+  position: relative;
+  width: 236px;
+  height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 55px;
+}
+.tours-wrapper .tour img {
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+.tours-wrapper .tour .overlay {
+  width: 236px;
+  height: 304px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-wrapper .tour .overlay h1 {
+  font-size: 60px;
+  font-family: GillSans;
+  color: white;
+}
+.tours-wrapper .tour .overlay .price {
+  width: 150px;
+  font-size: 30px;
+  font-family: GillSans;
+  color: white;
+  margin-bottom: 56px;
+}
+.tours-wrapper .tour .overlay .learnMore {
+  font-size: 15px;
+  font-family: GillSans;
+  color: white;
+  padding: 5px 30px;
+  background-color: #79ADDC;
+  border-radius: 15px;
 }
 
 .tour-hero {
@@ -2025,95 +2107,6 @@ nav .links a {
   }
   .days .day3 {
     margin-bottom: 20px;
-  }
-}
-.tours-wrapper {
-  width: 818px;
-  background-color: antiquewhite;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.tours-wrapper .tour {
-  width: 236px;
-  height: 304px;
-  background-color: aqua;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 55px;
-}
-.tours-wrapper .tour img {
-  max-width: 100%;
-  height: 100%;
-  margin: auto;
-  display: block;
-}
-.tours-wrapper .tour .overlay {
-  width: 236px;
-  height: 304px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.tours-wrapper .tour .overlay h1 {
-  font-size: 60px;
-  font-family: GillSans;
-  color: white;
-}
-.tours-wrapper .tour .overlay .price {
-  width: 150px;
-  font-size: 30px;
-  font-family: GillSans;
-  color: white;
-  margin-bottom: 56px;
-}
-.tours-wrapper .tour .overlay .learnMore {
-  font-size: 15px;
-  font-family: GillSans;
-  color: white;
-  padding: 5px 30px;
-  background-color: #79ADDC;
-  border-radius: 15px;
-}
-
-@media only screen and (max-width: 830px) {
-  .tours-wrapper {
-    width: 527px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  .tours-wrapper {
-    width: 236px;
   }
 }
 footer {
